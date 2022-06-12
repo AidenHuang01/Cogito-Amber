@@ -8,6 +8,7 @@ from utils.default_models import ensure_default_models
 
 
 if __name__ == '__main__':
+    os.system("cat cogito.txt")
     parser = argparse.ArgumentParser(
         description="Runs the toolbox.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
@@ -32,6 +33,6 @@ if __name__ == '__main__':
 
     # Remind the user to download pretrained models if needed
     ensure_default_models(args.models_dir)
-
     # Launch the toolbox
+
     Toolbox(**arg_dict)
